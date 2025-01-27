@@ -96,6 +96,9 @@
     color: #949494;
     font-size: 20px;
     margin: 0;
+    @media (max-width: 392px) {
+      font-size: 13px;
+    }
 }
 .line{
     width: 100px;
@@ -133,6 +136,9 @@
     font-size: 20px;
     margin: 0;
     text-align: right;
+    @media (max-width: 392px) {
+      font-size: 13px;
+    }
 }
 .text-container{
     /* background-color: aqua; */
@@ -157,7 +163,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: last baseline;
     margin: 0;
     /* background-color: aqua; */
 }
@@ -191,7 +197,7 @@
 /* WORKS PAGE */
 .works-container {
     /* padding: 30px; */
-    /* background-color: rgb(27, 27, 27); */
+    background-color: rgb(27, 27, 27);
     width: 100%;
     flex: 1;
     display: flex;
