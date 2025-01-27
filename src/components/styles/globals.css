@@ -1,0 +1,412 @@
+/* .home-section{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+.home-container{
+    padding: 30px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+} */
+.home-container{
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.page-section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #000000, #424242);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  .page-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(128, 128, 128, 0.089), rgba(0, 0, 0, 0.082));
+    filter: blur(1px); /* Adds the blurry texture */
+    z-index: 1;
+  }
+  
+  .page-section > * {
+    position: relative;
+    z-index: 2; /* Ensures content stays above the gradient and blur */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.home-container{
+    padding: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;  /* Add this */
+    flex: 1;
+    z-index: 1;
+}
+.home-wrapper {
+    /* background-color: black; */
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Update other page containers similarly */
+.works-container{
+    /* padding: 30px; */
+    background-color: rgba(160, 160, 160, 0);
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.contact-container{
+  padding: 30px;
+  width: 100%;
+  flex: 1;
+  z-index: 1;
+  background-color: #202020;
+}
+*{
+    box-sizing: border-box;
+}
+.welcome-text{
+    color: #949494;
+    font-size: 20px;
+    margin: 0;
+}
+.line{
+    width: 100px;
+    height: 1px;
+    background-color: #949494;
+    border-radius: 50%;
+}
+.welcome-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.home-heading{
+    color: #ffffff;
+    margin: 0;
+    font-size: 80px;
+    text-shadow: 0px 0px 10px black;
+    display: inline-block;
+    @media (max-width: 719px) {
+      font-size: 60px;
+    }
+    @media (max-width: 551px) {
+      font-size: 40px;
+    }
+    @media (max-width: 392px) {
+      font-size: 30px;
+    }
+}
+.letter {
+    display: inline-block;
+    opacity: 0; /* Hidden by default for animation */
+  }
+.motto{
+    color: #949494;
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+}
+.text-container{
+    /* background-color: aqua; */
+    width: max-content;
+    margin: auto;
+    z-index: 1;
+}
+.socials a{
+    color: #949494;
+    /* background-color: aqua; */
+    text-decoration: none;
+    i{
+        font-size: 20px;
+    }
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    /* background-color: aqua; */
+}
+.copyright-text {
+    /* width: max-content; */
+    margin: 0;  /* Remove any default margins */
+    @media (min-width: 908px){
+        position: relative; 
+    }
+}
+
+.copyright-text p {
+    color: #949494;
+
+    @media (min-width: 908px) {
+        white-space: nowrap;
+        margin: 0;  /* Remove any default margins */
+        position: absolute;  /* Position the rotated text */
+        right: 0;
+        left: 0;
+        transform-origin: bottom right;
+        transform: rotate(270deg);
+    }
+}
+.line2{
+    background-color: #949494;
+    width: 1px;
+    height: 15px;
+}
+
+/* WORKS PAGE */
+.works-container {
+    /* padding: 30px; */
+    /* background-color: rgb(27, 27, 27); */
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+.swiper {
+    width: 100%;
+    max-width: 1200px; /* Prevents stretching */
+    padding: 50px 0;
+  }
+  
+.swiper-slide {
+    position: relative;
+    width: 300px;
+    aspect-ratio: 3/4;
+    border-radius: 14px;
+    border: 1px solid rgb(24, 24, 24);
+    @media (max-width: 653px) {
+      width: 250px;
+    }
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    user-select: none;
+  }
+  
+  .title {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -20px);
+    width: max-content;
+    text-align: center;
+    padding: 10px 18px;
+    background-color: rgba(20, 20, 20, 0.219);
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 0px 4px 34px rgb(24, 24, 24);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s linear;
+  }
+  
+  .title span {
+    font-size: 1.2rem;
+  }
+  
+  .swiper-slide-active .title {
+    bottom: -10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.158);
+  }
+  
+  .swiper-pagination {
+    position: absolute;
+    bottom: 20px !important; /* Override Swiper's default position */
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: auto !important; /* Override Swiper's default width */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 32px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 14px;
+    opacity: 1;
+  }
+  .works-footer{
+    padding: 0 30px;
+    margin-top: -120px;
+    @media (max-width: 653px) {
+      margin: 0;
+    }
+  }
+  /* CONTACT PAGE */
+.left-container{
+  h1, h3{
+    color: white;
+    margin: 0;
+  }
+  p{
+    color: #949494;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    color: #949494;
+  }
+}
+.left-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width:944px) {
+    width: 80%;
+  }
+}
+.contact-wrapper{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+  /* background-color: aquamarine; */
+  @media (max-width:944px) {
+    flex-wrap: wrap;
+  }
+}
+.right-container{
+  width: 40%;
+  @media (max-width:944px) {
+    width: 100%;
+  }
+}
+/* .contactForm--btn{
+  @media (min-width:944px) {
+    display: none;
+  }
+} */
+.contact-form {
+  width: 100%;
+  /* Optional: Add a max width for better responsiveness */
+  height: auto;
+  background: rgba(41, 41, 41, 0.2); /* Transparent background with a dark tint */
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%); /* For Safari support */
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass effect */
+  padding: 20px;
+  border-radius: 15px; /* Slightly rounder corners */
+  color: #fff; /* Optional: Text color for better readability */
+}
+.contact-form{
+  h1{
+    color: white;
+  }
+  p{
+    color: #949494;
+    background-color: #4242424b;
+    padding: 10px 20px;
+  }
+}
+.submit--btn{
+  text-decoration: none;
+  button{
+    background-color: #000000;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+}
+.submit--btn:hover{
+  button{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  }
+}
+.submit--btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.text-fields input, .text-fields textarea {
+  width: 100%;
+  background-color: #42424228;
+  border: none;
+  padding: 10px 20px;
+  color: #949494;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.text-fields textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.text-fields input::placeholder, .text-fields textarea::placeholder {
+  color: #949494;
+}
+.notification.success {
+  color: green;
+}
+.notification.error {
+  color: red;
+}
