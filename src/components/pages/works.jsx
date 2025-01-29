@@ -16,9 +16,9 @@ import image8 from "../../assets/images/project-8.png";
 import image9 from "../../assets/images/project-9.png";
 
 
-const handleDescription = (description) => {
-  alert(description); // You can replace this with a modal if needed
-};
+// const handleDescription = (description) => {
+//   alert(description); // You can replace this with a modal if needed
+// };
 const Works = () => {
   return (
     <div className="works-container">
@@ -45,19 +45,27 @@ const Works = () => {
   <img src={image1} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://www.guanxiholdings.com/'}
+      onClick={() => window.open('https://www.guanxiholdings.com/', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/ehcag3', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
       onClick={() => handleDescription('Guanxi holdings is a company that specializes in tech hardware import and export.')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
 
@@ -66,19 +74,26 @@ const Works = () => {
   <img src={image2} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://www.moyofunds.com'}
+      onClick={() => window.open('https://www.moyofunds.com', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/hosv5y', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+    {/* <button
       onClick={() => handleDescription('We`re building Zimbabwe`s most trusted crowdfunding platform. Be the first to know when we launch.')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
 
@@ -87,19 +102,27 @@ const Works = () => {
   <img src={image4} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://www.stoneguard.co.zw'}
+      onClick={() => window.open('https://www.stoneguard.co.zw', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/h740di', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
       onClick={() => handleDescription('StoneGuard is a leading provider of comprehensive data protection services')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
         {/* CARD */}
@@ -107,19 +130,27 @@ const Works = () => {
   <img src={image3} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://www.shonatech.africa/'}
+      onClick={() => window.open('https://www.shonatech.africa/', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/6smpbc', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
       onClick={() => handleDescription('We provide the most convenient access to Starlink products & services through our network of Shona stores around the African continent. .')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
 {/* CARD 4 */}
@@ -127,19 +158,27 @@ const Works = () => {
   <img src={image5} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://www.zuripay.app'}
+      onClick={() => window.open('https://www.zuripay.app', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
         Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/cw7nj7', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
       onClick={() => handleDescription('Millions of businesses of all sizes use ZuriPay to accept payments, send payouts, and manage their businesses online')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
 {/* CARD 5 */}
@@ -147,19 +186,27 @@ const Works = () => {
   <img src={image6} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://avalonhealth.cloud'}
+      onClick={() => window.open('https://avalonhealth.cloud', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
         Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/7simgk', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
       onClick={() => handleDescription('We`re simplifying your journey to wellness, giving doctors the tools they need, and patients the access they deserve')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
 {/* CARD */}
@@ -167,19 +214,27 @@ const Works = () => {
   <img src={image7} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://clinic.avalonhealth.cloud'}
+      onClick={() => window.open('https://clinic.avalonhealth.cloud', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
         Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/cjvmp4', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
       onClick={() => handleDescription('Admin dashboard for Avalon Health, It contains information about the patients. ')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
 {/* CARD */}
@@ -187,19 +242,27 @@ const Works = () => {
   <img src={image8} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://www.zikimall.com'}
+      onClick={() => window.open('https://www.zikimall.com', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
         Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/o0d5qj', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
       onClick={() => handleDescription('ZikiMall is Zimbabwe`s Digital Mall, it is an ecommerce platform where customers and merchants trade')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
 {/* CARD*/}
@@ -207,36 +270,44 @@ const Works = () => {
   <img src={image9} alt="project" />
   <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
     <button
-      onClick={() => window.location.href = 'https://services.zikimall.com'}
+      onClick={() => window.open('https://services.zikimall.com', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
         Open
     </button>
     <button
+      onClick={() => window.open('https://wa.link/dmwjqb', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
       onClick={() => handleDescription('Pay for all mobile providers, settle over 1000`s of billers, and more. Zikicash makes international money transfares easy')}
       className="description-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
       Discription
-    </button>
+    </button> */}
   </div>
 </SwiperSlide>
       </Swiper>
       
       <div className="footer works-footer">
         <div className="socials">
-          <a href="#facebook">
+          <a href="https://www.facebook.com/lioncapventures">
             <i className="ri-facebook-fill"></i>
           </a>
-          <a href="#whatsapp">
+          <a href="https://wa.link/xl6ypy">
             <i className="ri-whatsapp-fill"></i>
           </a>
-          <a href="#linkedIn">
+          <a href="https://www.linkedin.com/company/lioncapventures">
             <i className="ri-linkedin-box-fill"></i>
           </a>
-          <a href="#instagram">
-            <i className="ri-instagram-line"></i>
+          <a href="https://x.com/LioncapVentures">
+            <i class="ri-twitter-x-line"></i>
           </a>
         </div>
         <div className="copyright-text">

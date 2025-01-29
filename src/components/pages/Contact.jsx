@@ -135,17 +135,17 @@ const Contact = () => {
       </div>
       <div className="footer contact-footer">
         <div className="socials">
-          <a href="#facebook">
+        <a href="https://www.facebook.com/lioncapventures">
             <i className="ri-facebook-fill"></i>
           </a>
-          <a href="#whatsapp">
+          <a href="https://wa.link/xl6ypy">
             <i className="ri-whatsapp-fill"></i>
           </a>
-          <a href="#linkedin">
+          <a href="https://www.linkedin.com/company/lioncapventures">
             <i className="ri-linkedin-box-fill"></i>
           </a>
-          <a href="#instagram">
-            <i className="ri-instagram-line"></i>
+          <a href="https://x.com/LioncapVentures">
+            <i class="ri-twitter-x-line"></i>
           </a>
         </div>
         <div className="copyright-text">
