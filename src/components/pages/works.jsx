@@ -14,6 +14,7 @@ import image6 from "../../assets/images/project-6.png";
 import image7 from "../../assets/images/project-7.png";
 import image8 from "../../assets/images/project-8.png";
 import image9 from "../../assets/images/project-9.png";
+import image10 from "../../assets/images/project-10.png";
 
 
 // const handleDescription = (description) => {
@@ -278,6 +279,35 @@ const Works = () => {
     </button>
     <button
       onClick={() => window.open('https://wa.link/dmwjqb', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Contact Us
+    </button>
+
+    {/* <button
+      onClick={() => handleDescription('Pay for all mobile providers, settle over 1000`s of billers, and more. Zikicash makes international money transfares easy')}
+      className="description-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+      Discription
+    </button> */}
+  </div>
+</SwiperSlide>
+
+{/* CARD*/}
+<SwiperSlide>
+  <img src={image10} alt="project" />
+  <div className="button-group" style={{ position: 'absolute', bottom: '5px', left: '50%', transform: 'translate(-50%, -20px)', display: 'flex', gap: '10px' }}>
+    <button
+      onClick={() => window.open('https://rapid-script.vercel.app/', '_blank')}
+      className="view-button"
+      style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
+    >
+        Open
+    </button>
+    <button
+      onClick={() => window.open('https://wa.link/bt7x70', '_blank')}
       className="view-button"
       style={{ padding: '5px 10px', borderRadius: '8px', border: '2px solid white', backgroundColor: 'transparent', color: 'white', cursor: 'pointer' }}
     >
